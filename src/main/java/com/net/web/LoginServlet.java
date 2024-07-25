@@ -20,11 +20,11 @@ public class LoginServlet extends HttpServlet {
 
         if ("test@sunbasedata.com".equals(loginid) && "Test@123".equals(password)) 
         {   
-				response.sendRedirect(("CustomerServlet?action=listCustomers"));
+		response.sendRedirect(("CustomerServlet?action=listCustomers"));
         } 
         else 
         {
-				response.sendRedirect("index.html");
+		response.sendRedirect("index.html");
         }
     }
 }
